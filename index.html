@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos | Pimenta de Oliveira & Couto Sociedade de Advogados</title>
-    <meta name="description" content="Conheça a história, missão e valores da Pimenta de Oliveira & Couto Sociedade de Advogados. Ética, excelência e proximidade humana no Direito.">
+    <title>Pimenta de Oliveira & Couto Sociedade de Advogados</title>
+    <meta name="description" content="Pimenta de Oliveira & Couto Sociedade de Advogados – excelência jurídica com ética, humanidade e compromisso.">
     <style>
+        /* ===== ESTILO GERAL ===== */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
             color: #333;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -23,16 +25,26 @@
         }
 
         header h1 {
-            font-size: 2.3em;
-            margin: 0;
+            font-size: 2.5em;
             font-weight: bold;
-            letter-spacing: 1px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
         }
 
         nav {
             background-color: #004080;
             text-align: center;
             padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
@@ -40,15 +52,16 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.05em;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        main {
+        section {
             max-width: 1000px;
-            margin: 40px auto;
+            margin: 50px auto;
             background-color: white;
             padding: 40px;
             border-radius: 10px;
@@ -60,6 +73,7 @@
             margin-top: 0;
         }
 
+        /* ===== QUEM SOMOS ===== */
         .missao {
             background-color: #eef6ff;
             padding: 20px;
@@ -68,8 +82,9 @@
             margin-top: 20px;
         }
 
+        /* ===== DEPOIMENTOS ===== */
         .depoimentos {
-            margin-top: 40px;
+            margin-top: 30px;
             background-color: #fafafa;
             padding: 30px;
             border-radius: 10px;
@@ -86,7 +101,56 @@
             color: #004080;
         }
 
-        .mensagem-positiva {
+        /* ===== SERVIÇOS ===== */
+        .servico {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #eef6ff;
+            border-left: 6px solid #0055b3;
+            border-radius: 6px;
+        }
+
+        .servico h3 {
+            color: #004080;
+            margin-top: 0;
+        }
+
+        /* ===== CONTATO ===== */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0055b3;
+        }
+
+        /* ===== MENSAGENS ===== */
+        .mensagem-positiva, .mensagem-final {
             margin-top: 40px;
             text-align: center;
             background-color: #e6f7ea;
@@ -98,6 +162,7 @@
             border-left: 6px solid #43a047;
         }
 
+        /* ===== RODAPÉ ===== */
         footer {
             background-color: #002d5b;
             color: white;
@@ -111,53 +176,63 @@
 <body>
 
     <header>
-        <h1>Quem Somos</h1>
-        <p>Pimenta de Oliveira & Couto Sociedade de Advogados</p>
+        <h1>Pimenta de Oliveira & Couto<br>Sociedade de Advogados</h1>
+        <p>Excelência jurídica com ética e compromisso</p>
     </header>
 
     <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="politica-de-privacidade.html">Política de Privacidade</a>
-        <a href="contato.html">Contato</a>
+        <a href="#inicio">Início</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#politica">Política de Privacidade</a>
+        <a href="#contato">Contato</a>
     </nav>
 
-    <main>
-        <h2>Nosso Propósito</h2>
+    <!-- ===== INÍCIO ===== -->
+    <section id="inicio">
+        <h2>Bem-vindo ao nosso escritório</h2>
         <p>
-            Fundada em 2022, a <strong>Pimenta de Oliveira & Couto Sociedade de Advogados</strong> nasceu do desejo de oferecer um atendimento jurídico ético, humano e eficiente.
-            Nosso escritório, sediado em Belo Horizonte (MG), atua com excelência em diversas áreas do Direito, sempre buscando a solução mais adequada para cada cliente.
+            Fundado em 2022, o escritório <strong>Pimenta de Oliveira & Couto Sociedade de Advogados</strong> atua com dedicação e responsabilidade em diversas áreas do Direito, buscando sempre a melhor solução para nossos clientes.
+        </p>
+        <p>
+            Nosso compromisso é oferecer atendimento personalizado, ético e eficiente, prezando pela transparência e pelo respeito às normas legais e deontológicas da advocacia.
+        </p>
+    </section>
+
+    <!-- ===== QUEM SOMOS ===== -->
+    <section id="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>
+            A <strong>Pimenta de Oliveira & Couto Sociedade de Advogados</strong> nasceu do propósito de oferecer soluções jurídicas de alta qualidade com proximidade, clareza e humanidade.
+            Nosso escritório em Belo Horizonte é composto por profissionais comprometidos com a justiça, a ética e o bem-estar de cada cliente.
         </p>
 
         <div class="missao">
             <h3>Missão</h3>
-            <p>Oferecer soluções jurídicas de qualidade, com ética, transparência e empatia, valorizando as pessoas e a justiça social.</p>
+            <p>Atuar com excelência e empatia, promovendo justiça e segurança jurídica para nossos clientes.</p>
 
             <h3>Visão</h3>
-            <p>Ser referência em advocacia moderna e humanizada, reconhecida pela confiança e pelos resultados consistentes.</p>
+            <p>Ser referência em advocacia moderna e humanizada, valorizando o diálogo e a transparência.</p>
 
             <h3>Valores</h3>
             <ul>
-                <li>Ética e honestidade em todas as relações;</li>
-                <li>Empatia e escuta ativa aos clientes;</li>
-                <li>Responsabilidade e compromisso com a verdade;</li>
-                <li>Busca constante pela excelência profissional.</li>
+                <li>Ética e integridade;</li>
+                <li>Empatia e respeito;</li>
+                <li>Responsabilidade social;</li>
+                <li>Excelência técnica e humana.</li>
             </ul>
         </div>
 
         <div class="depoimentos">
-            <h2>Depoimentos de Clientes</h2>
+            <h3>Depoimentos</h3>
             <div class="depoimento">
                 <p>“Fui atendido com muita atenção e profissionalismo. Resolveram meu problema com rapidez e clareza.”</p>
                 <p class="autor">– Carlos Henrique, empresário</p>
             </div>
-
             <div class="depoimento">
                 <p>“A equipe é extremamente competente e humana. Me senti acolhida em um momento difícil.”</p>
                 <p class="autor">– Mariana Lopes, cliente</p>
             </div>
-
             <div class="depoimento">
                 <p>“Transparência e seriedade do início ao fim. Recomendo sem hesitar.”</p>
                 <p class="autor">– Rafael Couto, engenheiro</p>
@@ -167,7 +242,65 @@
         <div class="mensagem-positiva">
             “A justiça é o primeiro passo para a paz. E o sorriso é o primeiro passo para a confiança.”
         </div>
-    </main>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section id="servicos">
+        <h2>Serviços Jurídicos</h2>
+
+        <div class="servico">
+            <h3>Direito Cível</h3>
+            <p>Contratos, indenizações, cobranças e responsabilidade civil. Buscamos sempre o equilíbrio e a justiça nas relações.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Direito Trabalhista</h3>
+            <p>Atuação em ações trabalhistas, acordos, rescisões e assessoria para empresas e empregados.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Direito Empresarial</h3>
+            <p>Consultoria jurídica, elaboração de contratos e estruturação de negócios com segurança e estratégia.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Família e Sucessões</h3>
+            <p>Atendimento humanizado em divórcios, inventários, guarda e pensões. Cuidamos de cada detalhe com sensibilidade.</p>
+        </div>
+
+        <div class="mensagem-final">
+            “Cuidar do seu direito é cuidar da sua paz. Conte conosco para defender o que é justo.”
+        </div>
+    </section>
+
+    <!-- ===== POLÍTICA DE PRIVACIDADE ===== -->
+    <section id="politica">
+        <h2>Política de Privacidade</h2>
+        <p>
+            Valorizamos a privacidade e a segurança dos dados dos nossos clientes. Todas as informações fornecidas em nosso site são utilizadas exclusivamente para contato e atendimento jurídico.
+        </p>
+        <p>
+            Não compartilhamos dados pessoais com terceiros, e seguimos as diretrizes da LGPD (Lei Geral de Proteção de Dados - Lei nº 13.709/2018).
+        </p>
+        <p>
+            Caso deseje solicitar a exclusão ou atualização de suas informações, entre em contato pelo e-mail:
+            <strong>contato@pimentadeoliveiraecouto.com.br</strong>.
+        </p>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato conosco e agende uma consulta. Será um prazer atendê-lo!</p>
+
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="tel" name="telefone" placeholder="Seu telefone">
+            <textarea name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
 
     <footer>
         <p><strong>CNPJ:</strong> 48.795.037/0001-80</p>
